@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 .firsthead{
-    margin-top: 90px;
+    margin-top: 110px;
     font-size: 20px;
     font-family: 'Cabin', sans-serif;
     margin-bottom: 0px;
@@ -11,4 +11,50 @@
     margin-top: -25px;
     font-family: 'Cabin', sans-serif;
 
+}
+.btn {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 1.33333em;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    padding: 0.58333em 0;
+    position: relative;
+    text-align: center;
+    width: 2.66667em;
+    margin-left: 80px;
+
+}
+.btn:before{
+   padding-top: 40px;
+    border: 2px solid #0edf6c!important;
+    box-sizing: border-box;
+    content: " ";
+    height: 35%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.btn:before{
+border-top: 0;
+bottom: 0;
+}
+.btn:after {
+    border-top: 0;
+    bottom: 0;
+}
+.btn:before,.btn:after {
+    border: 2px solid #7a4f1d;
+    box-sizing: border-box;
+    content: "";
+    height: 35%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+
+.qute{
+    font-size: 20px;
 }

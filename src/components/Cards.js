@@ -3,12 +3,14 @@ import { Grid } from '@material-ui/core'
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import {Button} from 'react-bootstrap'
 import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
+import Thirdhead from './Thirdhead';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -43,6 +45,25 @@ function Cards() {
     const theme = useTheme();
     return (
         <div>
+            <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+            >
+                <Grid item xs={6} >
+                    <div className='btn'>
+                        1
+                    </div>
+                    </Grid>
+                    <Grid item xs={6} >
+                    <div className='btn'>
+                        2
+                    </div>
+                    </Grid>
+
+
+            </Grid>
 
             <Grid className='firsthead'
                 container
@@ -72,6 +93,8 @@ function Cards() {
 
 
 
+
+
                 <Grid item xs={1}></Grid>
                 <Grid item xs={5}> <Card className={classes.root}>
                     <div className={classes.details}>
@@ -96,6 +119,32 @@ function Cards() {
             </Grid>
 
 
+
+
+            <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+            >
+                <Grid item xs={6} >
+                    <div className='btn'>
+                        3
+                    </div>
+                    </Grid>
+                    <Grid item xs={6} >
+                    <div className='btn'>
+                        4
+                    </div>
+                    </Grid>
+
+
+            </Grid>
+
+
+            
+
+
             <Grid className='firsthead'
                 container
                 direction="row"
@@ -113,7 +162,7 @@ function Cards() {
                         </CardContent>
                         <div className={classes.controls}>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Sed laoreet magna commodo libero euismod sodales. Nunc ac libero convallis,
+                                Sed laoreet magna commodo libero euismod sodales. Nunc ac libero convallis,
                              interdum ligula vel, pretium diam. Integer commodo sem at dui sollicitudin.          </Typography>
 
                         </div>
@@ -135,7 +184,7 @@ function Cards() {
                         </CardContent>
                         <div className={classes.controls}>
                             <Typography variant="subtitle1" color="textSecondary">
-                            Vestibulum a nunc ut eros condimentum posuere. Nullam dapibus quis nunc non interdum.
+                                Vestibulum a nunc ut eros condimentum posuere. Nullam dapibus quis nunc non interdum.
                              Pellentesque tortor ligula, gravida ac commodo eu.            </Typography>
 
                         </div>
@@ -147,7 +196,7 @@ function Cards() {
 
 
 
-
+         <Thirdhead />
 
         </div>
     )
