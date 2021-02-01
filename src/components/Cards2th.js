@@ -9,6 +9,9 @@ import Typography from '@material-ui/core/Typography';
 import './App.css'
 import Avatar from './Picavatar';
 import Picavatar from './Picavatar';
+import Pic2 from './Pic2';
+import Pic3 from './Pic3';
+import Forthhead from './Forthhead';
 
 const useStyles = makeStyles({
   root: {
@@ -41,7 +44,8 @@ function Cards2th() {
   alignItems="center"
 >
 
-    <Grid item xs={4}>  <Card className={classes.root}>
+    <Grid item xs={4}> 
+     <Card className={classes.root}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
         </Typography>
@@ -53,10 +57,11 @@ function Cards2th() {
 
         </Typography>
         <Typography variant="body2" component="p">
-            <Picavatar />
         </Typography>
       </CardContent>
       <CardActions>
+      <Picavatar />
+
       </CardActions>
     </Card>
   
@@ -88,6 +93,7 @@ function Cards2th() {
         </Typography>
       </CardContent>
       <CardActions>
+        <Pic2 />
       </CardActions>
     </Card>
   
@@ -117,6 +123,7 @@ function Cards2th() {
         </Typography>
       </CardContent>
       <CardActions>
+        <Pic3 />
       </CardActions>
     </Card>
   
@@ -134,6 +141,7 @@ function Cards2th() {
 
 
 </Grid>
+<Forthhead />
         </div>
     )
 }

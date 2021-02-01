@@ -11,13 +11,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
- function Picavatar() {
+ function Pic3() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Avatar alt="Travis Howard" src="https://themes.stackbit.com/demos/exto/images/sean_salazar.jpg" /> Sean Salazar 
+      <Avatar alt="Travis Howard" 
+      src="https://themes.stackbit.com/demos/exto/images/deegan_wallace.jpg" /> Deegan Wallace 
     </div>
   );
 }
- export default Picavatar;
+ export default Pic3;
